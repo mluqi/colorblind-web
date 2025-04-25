@@ -106,7 +106,7 @@ const AboutUs = () => {
             <div className="bg-gray-900 rounded-lg p-6 border border-gray-800 mb-8">
               <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
               <p className="text-gray-400">
-                "Memberikan pengalaman vaping terbaik melalui inovasi coil yang konsisten, tahan lama, dan penuh flavor. Kami percaya setiap hisapan harus sempurna."
+                &quot;Memberikan pengalaman vaping terbaik melalui inovasi coil yang konsisten, tahan lama, dan penuh flavor. Kami percaya setiap hisapan harus sempurna.&quot;
               </p>
             </div>
             
