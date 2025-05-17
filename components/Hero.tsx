@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="text-left w-full xl:w-1/2 space-y-6 md:space-y-8 z-10 pt-8 md:pt-12">
             <div className="flex flex-col space-y-2">
               <span className="text-red-500 font-medium tracking-wider">
-                PREBUILD COIL
+                INDONESIAN LOCAL PREBUILD COIL
               </span>
               <GlitchText
                 speed={0.5}
@@ -30,7 +30,7 @@ const Hero = () => {
             </div>
             
             <p className="text-lg md:text-xl lg:text-2xl text-gray-300 max-w-lg">
-              Bold. Smooth. Just the way it should be.
+              Robust and Bold flavor. {<br></br>}Just the way it should.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -45,11 +45,11 @@ const Hero = () => {
             <div className="pt-4 flex flex-wrap items-center gap-4 text-sm text-gray-400">
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-                <span>100+ Flavors</span>
+                <span>Available in your Favorite Vapestore</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-                <span>Satisfaction Guaranteed</span>
+                <span>Good Durabilty</span>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="relative w-full xl:w-1/2 flex justify-center xl:justify-end z-10 mt-8 md:mt-12">
             <div className="relative w-[280px] h-[380px] sm:w-[350px] sm:h-[450px] md:w-[400px] md:h-[500px]">
               <Image
-                src="/assets/colorblind.png"
+                src="/assets/logo.png"
                 alt="Vape Product"
                 fill
                 priority

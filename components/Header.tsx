@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/">
         <Image 
-            src="/assets/logo.png" 
+            src="/assets/logo_header.png" 
             alt="Logo" 
             width={500} 
             height={500}

@@ -10,20 +10,21 @@ interface CoilCardProps {
   price: number;
   image: string;
   resistance: string;
+  diameter: string;
   material: string;
   wattage: string;
   bestFor: string;
 }
-const CoilCard = ({ name, type, description, price, image, resistance, material, wattage, bestFor }: CoilCardProps) => {
+const CoilCard = ({ name, type, description, price, image, resistance, diameter, material, wattage, bestFor }: CoilCardProps) => {
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-red-500 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10">
       {/* Coil Image */}
-      <div className="relative h-48 bg-black">
+      <div className="relative h-64 bg-black">
         <Image
           src={image}
           alt={name}
           fill
-          className="object-contain p-4"
+          className="object-cover rounded-t-lg h-full"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {/* Badge */}
@@ -42,6 +43,8 @@ const CoilCard = ({ name, type, description, price, image, resistance, material,
           <div className="bg-gray-900/50 p-2 rounded">
             <p className="text-xs text-gray-400">Resistance</p>
             <p className="font-mono">{resistance}</p>
+            <p className="text-xs text-gray-400">ID</p>
+            <p className="font-mono">{diameter}</p>
           </div>
           <div className="bg-gray-900/50 p-2 rounded">
             <p className="text-xs text-gray-400">Material</p>
