@@ -6,15 +6,15 @@ import {FaFacebook, FaInstagram, FaTiktok} from "react-icons/fa";
 const socmedicons = [
     {
         icon: <FaFacebook />,
-        href: "/",
+        href: "https://web.facebook.com/color.blind.378401/",
     },
     {
         icon: <FaInstagram />,
-        href: "/",
+        href: "https://www.instagram.com/colorblind.coils/",
     },
     {
         icon: <FaTiktok />,
-        href: "/",
+        href: "https://www.tiktok.com/@colorblind.wire",
     },
 ]
 
@@ -43,6 +43,8 @@ const Footer = () => {
                   key={index}
                   href={item.href} 
                   className="text-gray-400 hover:text-red-500 transition"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                     {item.icon}
                 </Link>
@@ -117,8 +119,8 @@ const Footer = () => {
             </form>
             <div className="mt-6">
               <h4 className="font-medium mb-2">Contact</h4>
-              <p className="text-gray-400">support@coilmasters.com</p>
-              <p className="text-gray-400">+1 (555) 123-4567</p>
+              <p className="text-gray-400">support@colorblindwire.com</p>
+              <p className="text-gray-400">+62 895-0431-9908</p>
             </div>
           </div>
         </div>

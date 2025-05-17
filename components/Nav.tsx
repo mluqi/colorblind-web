@@ -13,12 +13,8 @@ const links = [
     path: "#about",
   },
   {
-    name: "series",
-    path: "#series",
-  },
-  {
     name: "product",
-    path: "#katalog-produk",
+    path: "#product",
   },
   {
     name: "contact",

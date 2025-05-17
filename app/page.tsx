@@ -4,6 +4,8 @@ import CoilComparison from "@/components/CoilComparison";
 import CoilLifeCalculator from "@/components/CoilLifeCalculator";
 import CoilProducts from "@/components/CoilProducts";
 import CompatibilityGuide from "@/components/CompatibilityGuide";
+import ContactUs from "@/components/Contactus";
+import StoreSlider from "@/components/StoreSlider";
 
 export default function Home() {
   return (
@@ -11,9 +13,11 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <CoilProducts />
-      <CoilComparison />
+      <StoreSlider />
+      {/* <CoilComparison /> */}
       <CoilLifeCalculator />
       <CompatibilityGuide />
+      <ContactUs />
     </div>
   );
 }

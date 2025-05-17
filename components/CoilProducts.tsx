@@ -68,7 +68,7 @@ const CoilProducts = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-900 text-white relative overflow-hidden">
+    <section id="product" className="py-16 bg-gray-900 text-white relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-red-600 blur-3xl"></div>
