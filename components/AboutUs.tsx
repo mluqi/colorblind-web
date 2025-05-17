@@ -23,8 +23,11 @@ const AboutUs = () => {
 
   const mainImages = [
     { src: "/assets/about_us.jpg", label: "Since 2021" },
-    { src: "/assets/hero.png", label: "Coil Premium" },
-    { src: "/assets/hero.png", label: "High Performance" },
+    { src: "/assets/details/detail1.jpg", label: "Coil Premium" },
+    { src: "/assets/details/detail4.jpg", label: "High Performance" },
+    { src: "/assets/details/detail5.jpg", label: "Good Durability" },
+    { src: "/assets/details/detail7.jpg", label: "Bold Flavour" },
+    { src: "/assets/details/detail8.jpg", label: "Made in Indonesia" },
   ];
 
   return (
@@ -37,7 +40,7 @@ const AboutUs = () => {
               <Swiper
                 spaceBetween={16}
                 pagination={{ clickable: true }}
-                autoplay={{ delay: 1000 }}
+                autoplay={{ delay: 2000 }}
                 modules={[Pagination, Autoplay]}
                 className="w-full h-96"
               >
@@ -74,7 +77,7 @@ const AboutUs = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Image
-                  src="/assets/hero.png"
+                  src="/assets/details/detail2.jpg"
                   alt="Coil Closeup 1"
                   fill
                   className="object-cover"
@@ -89,7 +92,7 @@ const AboutUs = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <Image
-                  src="/assets/hero.png"
+                  src="/assets/details/detail9.jpg"
                   alt="Coil Closeup 2"
                   fill
                   className="object-cover"
