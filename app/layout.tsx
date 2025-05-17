@@ -16,6 +16,9 @@ const delaGothicOne = Dela_Gothic_One({
 export const metadata: Metadata = {
   title: "Colorblind",
   description: "Prebuild Coil",
+  icons: {
+    icon: "/assets/logo.png",
+  },
 };
 
 export default function RootLayout({
