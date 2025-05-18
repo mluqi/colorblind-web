@@ -24,6 +24,7 @@ const storeLogos = [
   { src: "/assets/store/tvs.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/vapestore.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/zdan.png", alt: "Store Logo 7", href: "#" },
+  { src: "/assets/store/leaderslawi.png", alt: "Store Logo 7", href: "#" },
 ];
 
 const StoreSlider = () => {
@@ -60,11 +61,12 @@ const StoreSlider = () => {
           {storeLogos.map((logo, index) => (
             <SwiperSlide key={index} className="flex justify-center items-center">
               <a className="block opacity-70 hover:opacity-100 transition-opacity duration-300">
-                <div className="relative h-16 w-32 md:h-20 md:w-40">
+                <div className="relative h-16 w-32 md:h-40 md:w-40">
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    fill
+                    width={120}
+                    height={120}
                     className="object-contain"
                   />
                 </div>

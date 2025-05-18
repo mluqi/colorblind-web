@@ -27,7 +27,12 @@ const AboutUs = () => {
     { src: "/assets/details/detail4.jpg", label: "High Performance" },
     { src: "/assets/details/detail5.jpg", label: "Good Durability" },
     { src: "/assets/details/detail7.jpg", label: "Bold Flavour" },
-    { src: "/assets/details/detail8.jpg", label: "Made in Indonesia" },
+    { src: "/assets/details/detail10.jpg", label: "Colorblind Detail" },
+    { src: "/assets/details/detail11.jpg", label: "Colorblind Detail" },
+    { src: "/assets/details/detail12.jpg", label: "Colorblind Detail" },
+    { src: "/assets/details/detail13.jpg", label: "Colorblind Detail" },
+    { src: "/assets/details/detail15.jpg", label: "Colorblind Detail" },
+    { src: "/assets/details/detail2.jpg", label: "Colorblind Detail" },
   ];
 
   return (
@@ -77,7 +82,7 @@ const AboutUs = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Image
-                  src="/assets/details/detail2.jpg"
+                  src="/assets/details/detail14.jpg"
                   alt="Coil Closeup 1"
                   fill
                   className="object-cover"
@@ -150,6 +155,18 @@ const AboutUs = () => {
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Quality Materials</h3>
                   <p className="text-gray-400">Hanya menggunakan material berkualitas tinggi: Ni80 dan Ni90</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center mt-1 flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">What Coils Can We Make ?</h3>
+                  <p className="text-gray-400">Alien 2core/3core, clapton, fused clapton, staggered fused clapton </p>
                 </div>
               </div>
             </div>
