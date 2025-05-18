@@ -1,59 +1,73 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import {FaFacebook, FaInstagram, FaTiktok} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const socmedicons = [
-    {
-        icon: <FaFacebook />,
-        href: "https://web.facebook.com/color.blind.378401/",
-    },
-    {
-        icon: <FaInstagram />,
-        href: "https://www.instagram.com/colorblind.coils/",
-    },
-    {
-        icon: <FaTiktok />,
-        href: "https://www.tiktok.com/@colorblind.wire",
-    },
-]
+  {
+    icon: <FaFacebook />,
+    href: "https://web.facebook.com/color.blind.378401/",
+  },
+  {
+    icon: <FaInstagram />,
+    href: "https://www.instagram.com/colorblind.coils/",
+  },
+  {
+    icon: <FaTiktok />,
+    href: "https://www.tiktok.com/@colorblind.wire",
+  },
+  {
+    icon: (
+      <Image src="./assets/icons/tokopedia.svg" width={50} height={50} alt="" />
+    ),
+    href: "https://www.tokopedia.com/colorblindwire",
+  },
+];
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white border-t border-gray-800">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="flex justify-center">
+          {" "}
+          {/* Centers the main content block (Brand Info) */}
           {/* Brand Info */}
-          <div className="space-y-6">
-            <Link href="/" className="flex items-center">
-              <Image 
-                src="/assets/logo.png" 
-                alt="Coil Masters Logo" 
-                width={160} 
+          <div className="space-y-6 flex flex-col items-center text-center">
+            {" "}
+            {/* Stacks and centers items within Brand Info */}
+            <Link href="/" className="flex justify-center items-center">
+              {" "}
+              {/* Centers logo within the Link area */}
+              <Image
+                src="/assets/logo_header.png"
+                alt="Coil Masters Logo"
+                width={160}
                 height={40}
                 className="h-10 w-auto"
               />
             </Link>
             <p className="text-gray-400">
-              Premium prebuilt coils for the discerning vaper. Engineered for performance and flavor.
+              Premium prebuilt coils for the discerning vaper. Engineered for
+              performance and flavor.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-4">
+              {" "}
+              {/* Centers social icons */}
               {socmedicons.map((item, index) => (
-                <Link 
+                <Link
                   key={index}
-                  href={item.href} 
-                  className="text-gray-400 hover:text-red-500 transition"
+                  href={item.href}
+                  className="text-gray-400 hover:text-red-500 transition text-5xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                    {item.icon}
+                  {item.icon}
                 </Link>
               ))}
             </div>
           </div>
-
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-6 text-red-400">Quick Links</h3>
             <ul className="space-y-3">
               {[
@@ -73,10 +87,9 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
+          </div> */}
           {/* Products */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-6 text-red-400">Products</h3>
             <ul className="space-y-3">
               {[
@@ -96,10 +109,9 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
+          </div> */}
           {/* Contact/Newsletter */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-6 text-red-400">Stay Updated</h3>
             <p className="text-gray-400 mb-4">
               Subscribe for new products, tutorials, and exclusive deals.
@@ -122,22 +134,35 @@ const Footer = () => {
               <p className="text-gray-400">support@colorblindwire.com</p>
               <p className="text-gray-400">+62 895-0431-9908</p>
             </div>
-          </div>
+          </div>*/}
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Luckysdev. All rights reserved.
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col items-center text-center md:flex-row md:justify-between">
+          {" "}
+          {/* Centers items on mobile, default desktop layout */}
+          <p className="text-gray-500 text-sm mb-4 md:mb-0">
+            {" "}
+            {/* Spacing for mobile stacking */}© {new Date().getFullYear()}{" "}
+            Colorblind. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-gray-500 hover:text-gray-300 text-sm transition">
+          <div className="flex space-x-6">
+            <Link
+              href="/privacy"
+              className="text-gray-500 hover:text-gray-300 text-sm transition"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-gray-500 hover:text-gray-300 text-sm transition">
+            <Link
+              href="/terms"
+              className="text-gray-500 hover:text-gray-300 text-sm transition"
+            >
               Terms of Service
             </Link>
-            <Link href="/age-verification" className="text-gray-500 hover:text-gray-300 text-sm transition">
+            <Link
+              href="/age-verification"
+              className="text-gray-500 hover:text-gray-300 text-sm transition"
+            >
               Age Verification
             </Link>
           </div>

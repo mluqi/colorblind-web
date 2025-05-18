@@ -15,7 +15,7 @@ export default function Home() {
       <CoilProducts />
       <StoreSlider />
       {/* <CoilComparison /> */}
-      <CoilLifeCalculator />
+      {/* <CoilLifeCalculator /> */}
       <CompatibilityGuide />
       <ContactUs />
     </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface CoilCardProps {
   name: string;
@@ -15,7 +16,18 @@ interface CoilCardProps {
   wattage: string;
   bestFor: string;
 }
-const CoilCard = ({ name, type, description, price, image, resistance, diameter, material, wattage, bestFor }: CoilCardProps) => {
+const CoilCard = ({
+  name,
+  type,
+  description,
+  price,
+  image,
+  resistance,
+  diameter,
+  material,
+  wattage,
+  bestFor,
+}: CoilCardProps) => {
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-red-500 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10">
       {/* Coil Image */}
@@ -37,7 +49,7 @@ const CoilCard = ({ name, type, description, price, image, resistance, diameter,
       <div className="p-4">
         <h3 className="text-xl font-bold mb-1">{name}</h3>
         <p className="text-gray-400 text-sm mb-3">{description}</p>
-        
+
         {/* Technical Specs */}
         <div className="grid grid-cols-2 gap-2 mb-4">
           <div className="bg-gray-900/50 p-2 rounded">
@@ -62,10 +74,12 @@ const CoilCard = ({ name, type, description, price, image, resistance, diameter,
 
         {/* Price and Action */}
         <div className="flex items-center justify-between mt-4">
-          <span className="text-xl font-bold text-red-400">${price}</span>
+          <span className="text-xl font-bold text-red-400">Rp {price}</span>
+          <Link href={"#kontak"}>
           <Button className="bg-red-600 hover:bg-red-700 px-4 py-2 text-sm">
             Add to Cart
           </Button>
+          </Link>
         </div>
       </div>
     </div>

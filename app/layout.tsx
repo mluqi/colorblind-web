@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Poppins, Dela_Gothic_One } from "next/font/google";
+import { Dela_Gothic_One } from "next/font/google";
 import "./globals.css";
 
 //components
 import Header from "@/components/Header";
-import Background from "@/components/Background";
 import Footer from "@/components/Footer";
 
 const delaGothicOne = Dela_Gothic_One({
@@ -29,11 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={delaGothicOne.variable}>
-        {/* <Background opacity={20}> */}
           <Header />
           <main>{children}</main>
           <Footer />
-        {/* </Background> */}
       </body>
     </html>
   );
