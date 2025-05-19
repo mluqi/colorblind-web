@@ -65,8 +65,7 @@ const StoreSlider = () => {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
-                    width={120}
-                    height={120}
+                    fill
                     className="object-contain"
                   />
                 </div>
