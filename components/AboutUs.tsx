@@ -115,58 +115,117 @@ const AboutUs = () => {
             </h2>
 
             <p className="text-gray-400 mb-6 text-lg">
-              Kami adalah pionir dalam pembuatan prebuilt coil premium untuk para vaper yang mengutamakan kualitas dan performa.
+              Kami adalah pionir dalam pembuatan prebuilt coil premium untuk
+              para vaper yang mengutamakan kualitas dan performa.
             </p>
 
             <div className="space-y-6 mb-8">
               {/* Handcrafted */}
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center mt-1 flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Handcrafted Precision</h3>
-                  <p className="text-gray-400">Setiap coil dibuat dengan ketelitian tangan ahli</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Handcrafted Precision
+                  </h3>
+                  <p className="text-gray-400">
+                    Setiap coil dibuat dengan ketelitian tangan ahli
+                  </p>
                 </div>
               </div>
 
               {/* Performance */}
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center mt-1 flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Optimal Performance</h3>
-                  <p className="text-gray-400">Desain coil kami memberikan flavor maksimal dan ketahanan yang baik</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Optimal Performance
+                  </h3>
+                  <p className="text-gray-400">
+                    Desain coil kami memberikan flavor maksimal dan ketahanan
+                    yang baik
+                  </p>
                 </div>
               </div>
 
               {/* Materials */}
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center mt-1 flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Quality Materials</h3>
-                  <p className="text-gray-400">Hanya menggunakan material berkualitas tinggi: Ni80 dan Ni90</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Quality Materials
+                  </h3>
+                  <p className="text-gray-400">
+                    Hanya menggunakan material berkualitas tinggi: Ni80 dan Ni90
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center mt-1 flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                    <path d="M14 6l-4 4" />
+                    <path d="M16.5 8.5l2 2" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">What Coils Can We Make ?</h3>
-                  <p className="text-gray-400">Alien 2core/3core, clapton, fused clapton, staggered fused clapton </p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    What Coils Can We Make ?
+                  </h3>
+                  <p className="text-gray-400">
+                    Alien 2core/3core, clapton, fused clapton, staggered fused
+                    clapton{" "}
+                  </p>
                 </div>
               </div>
             </div>
@@ -174,7 +233,9 @@ const AboutUs = () => {
             <div className="bg-gray-900 rounded-lg p-6 border border-gray-800 mb-8">
               <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
               <p className="text-gray-400">
-                &quot;Memberikan pengalaman vaping terbaik melalui inovasi coil yang konsisten, tahan lama, dan penuh flavor. Kami percaya setiap hisapan harus sempurna.&quot;
+                &quot;Memberikan pengalaman vaping terbaik melalui inovasi coil
+                yang konsisten, tahan lama, dan penuh flavor. Kami percaya
+                setiap hisapan harus sempurna.&quot;
               </p>
             </div>
 
