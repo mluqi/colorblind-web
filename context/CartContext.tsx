@@ -2,21 +2,17 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-// Definisikan struktur produk yang akan disimpan di keranjang
 export interface Product {
   id: number;
   name: string;
   price: number;
   image: string;
-  // Anda bisa menambahkan properti lain jika diperlukan
 }
 
-// Definisikan struktur item dalam keranjang, termasuk kuantitas
 export interface CartItem extends Product {
   quantity: number;
 }
 
-// Definisikan tipe untuk CartContext
 interface CartContextType {
   cartItems: CartItem[];
   addToCart: (product: Product) => void;

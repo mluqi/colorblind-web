@@ -8,7 +8,7 @@ interface CartOffcanvasProps {
 }
 
 const CartOffcanvas: React.FC<CartOffcanvasProps> = ({ isOpen, onClose }) => {
-  const { cart, removeFromCart, updateQuantity } = useCart();
+  const { cartItems: cart, removeFromCart, updateQuantity } = useCart();
 
   if (!isOpen) {
     return null;
