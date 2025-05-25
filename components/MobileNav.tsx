@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { CiMenuBurger } from "react-icons/ci";
+import { useCart } from "@/context/CartContext"; // Impor useCart
+import { ShoppingCart } from "lucide-react"; // Impor ikon keranjang
 
 const links = [
   {
@@ -26,6 +28,8 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false); // State untuk mengontrol popup
   const [activeHash, setActiveHash] = useState(""); // State untuk hash aktif
   const triggerRef = useRef<HTMLButtonElement>(null); // Referensi ke tombol trigger
+  const { openCart, cartItems } = useCart(); // Ambil fungsi dan data dari CartContext
+  const totalItemsInCart = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   useEffect(() => {
     // Update activeHash berdasarkan hash di URL
@@ -76,6 +80,12 @@ const MobileNav = () => {
     setIsOpen(false); // Tutup popup setelah klik
   };
 
+  const handleOpenCart = () => {
+    openCart();
+    setIsOpen(false); // Tutup popup mobile nav setelah membuka keranjang
+  };
+
+
   return (
     <>
       {/* Trigger untuk membuka popup */}
@@ -111,6 +121,20 @@ const MobileNav = () => {
                 {link.name}
               </a>
             ))}
+            {/* Tombol/Link Keranjang Belanja untuk Mobile */}
+            <button
+              onClick={handleOpenCart}
+              className="flex items-center gap-2 text-gray-800 border-b-2 border-white/20 capitalize text-lg hover:text-accent transition-all w-full text-left py-1"
+              aria-label="View shopping cart"
+            >
+              <ShoppingCart className="h-5 w-5" />
+              <span>Cart</span>
+              {totalItemsInCart > 0 && (
+                <span className="ml-auto bg-accent text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                  {totalItemsInCart}
+                </span>
+              )}
+            </button>
           </div>
         </div>
       )}

@@ -2,6 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import CoilCard from "@/components/CoilCard";
+import { useCart } from "@/context/CartContext"; 
+import { Product } from "@/context/CartContext";
 
 const CoilProducts = () => {
   const coils = [
@@ -67,6 +69,8 @@ const CoilProducts = () => {
     }
   ];
 
+  const { addToCart, openCart } = useCart();
+
   return (
     <section id="product" className="py-16 bg-gray-900 text-white relative overflow-hidden">
       {/* Decorative elements */}
@@ -84,27 +88,30 @@ const CoilProducts = () => {
             Optimized for flavor chasing and good durability
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {coils.map((coil) => (
-            <CoilCard 
-              key={coil.id}
-              name={coil.name}
-              type={coil.type}
-              description={coil.description}
-              price={coil.price}
-              image={coil.image}
-              resistance={coil.resistance}
-              diameter={coil.diameter}
-              material={coil.material}
-              wattage={coil.wattage}
-              bestFor={coil.bestFor}
-            />
-          ))}
+          {coils.map((coil) => {
+            const productToAdd: Product = {
+              id: coil.id,
+              name: coil.name,
+              price: coil.price,
+              image: coil.image,
+            };
+            return (
+              <CoilCard 
+                key={coil.id}
+                {...coil}
+                onAddToCart={() => addToCart(productToAdd)} 
+              />
+            );
+          })}
         </div>
 
         {/* <div className="text-center mt-12">
-          <Button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-lg font-semibold rounded-full transition-all transform hover:scale-105 shadow-lg">
+          <Button 
+            className="px-8 py-4 bg-red-600 hover:bg-red-700 text-lg font-semibold rounded-full transition-all transform hover:scale-105 shadow-lg"
+            // onClick={() => router.push('/all-products')} // Contoh navigasi jika ada halaman semua produk
+          >
             Browse All Coils
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />

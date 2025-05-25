@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Dela_Gothic_One } from "next/font/google";
+import { CartProvider } from "@/context/CartContext";
+import CartSidebar from "@/components/CartSidebar";
 import "./globals.css";
 
 //components
@@ -28,9 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={delaGothicOne.variable}>
+        <CartProvider>
+          <CartSidebar />
           <Header />
           <main>{children}</main>
           <Footer />
+        </CartProvider>
       </body>
     </html>
   );

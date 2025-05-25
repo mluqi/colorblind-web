@@ -15,6 +15,7 @@ interface CoilCardProps {
   material: string;
   wattage: string;
   bestFor: string;
+  onAddToCart: () => void;
 }
 const CoilCard = ({
   name,
@@ -27,6 +28,7 @@ const CoilCard = ({
   material,
   wattage,
   bestFor,
+  onAddToCart,
 }: CoilCardProps) => {
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden border border-gray-700 hover:border-red-500 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10">
@@ -71,15 +73,17 @@ const CoilCard = ({
             <p className="font-medium">{bestFor}</p>
           </div>
         </div>
-
         {/* Price and Action */}
-        <div className="flex items-center justify-between mt-4">
-          <span className="text-xl font-bold text-red-400">Rp {price}</span>
-          <Link href={"#kontak"}>
-          <Button className="bg-red-600 hover:bg-red-700 px-4 py-2 text-sm">
+        <div className="mt-auto">
+          <p className="text-2xl font-bold text-red-500 mb-4">
+            Rp {price.toLocaleString()}
+          </p>
+          <Button
+            onClick={onAddToCart} // Panggil onAddToCart saat tombol diklik
+            className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg transition-colors"
+          >
             Add to Cart
           </Button>
-          </Link>
         </div>
       </div>
     </div>
