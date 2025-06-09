@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.colorblindwire.store
+
+# Sitemaps
+Sitemap: https://www.colorblindwire.store/sitemap.xml
