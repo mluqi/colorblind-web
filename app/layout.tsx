@@ -32,7 +32,7 @@ export default function RootLayout({
       <head>
         <meta
           name="google-site-verification"
-          content="oNHcp8iX_3dLUiboCni7Hbg8SXLWP9ukSNAekNpOJCw"
+          content="O1Cderxkcartk0R3ljJoP-fXdxszve1RpZe9YW-mugc"
         />
       </head>
       <body className={delaGothicOne.variable}>
