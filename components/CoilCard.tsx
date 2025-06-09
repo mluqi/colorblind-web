@@ -8,6 +8,7 @@ interface CoilCardProps {
   name: string;
   type: string;
   description: string;
+  discount: number;
   price: number;
   image: string;
   resistance: string;
@@ -15,12 +16,15 @@ interface CoilCardProps {
   material: string;
   wattage: string;
   bestFor: string;
+  lifespan: string;
+  compatible: string[];
   onAddToCart: () => void;
 }
 const CoilCard = ({
   name,
   type,
   description,
+  discount,
   price,
   image,
   resistance,
@@ -28,6 +32,8 @@ const CoilCard = ({
   material,
   wattage,
   bestFor,
+  lifespan,
+  compatible,
   onAddToCart,
 }: CoilCardProps) => {
   return (
@@ -72,12 +78,32 @@ const CoilCard = ({
             <p className="text-xs text-gray-400">Best For</p>
             <p className="font-medium">{bestFor}</p>
           </div>
+          <div className="bg-gray-900/50 p-2 rounded">
+            <p className="text-xs text-gray-400">Lifespan</p>
+            <p className="font-medium">{lifespan}</p>
+          </div>
+          <div className="bg-gray-900/50 p-2 rounded">
+            <p className="text-xs text-gray-400">Compatible for</p>
+            <p className="font-medium">{compatible.join(", ")}</p>
+          </div>
+
         </div>
         {/* Price and Action */}
         <div className="mt-auto">
-          <p className="text-2xl font-bold text-red-500 mb-4">
-            Rp {price.toLocaleString()}
-          </p>
+          {discount > 0 ? (
+            <div className="mb-2 flex items-end gap-2">
+              <span className="text-lg text-gray-400 line-through">
+                Rp {price.toLocaleString()}
+              </span>
+              <span className="text-2xl font-bold text-red-500">
+                Rp {(price - discount).toLocaleString()}
+              </span>
+            </div>
+          ) : (
+            <p className="text-2xl font-bold text-red-500 mb-4">
+              Rp {price.toLocaleString()}
+            </p>
+          )}
           <Button
             onClick={onAddToCart} // Panggil onAddToCart saat tombol diklik
             className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg transition-colors"

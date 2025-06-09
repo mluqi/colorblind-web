@@ -5,6 +5,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 export interface Product {
   id: number;
   name: string;
+  discount: number;
   price: number;
   image: string;
 }
@@ -67,7 +68,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
           item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
         );
       }
-      return [...prevItems, { ...product, quantity: 1 }];
+      return [...prevItems, { ...product, quantity: 1, discount: product.discount}];
     });
   };
 
@@ -88,7 +89,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   };
 
   const clearCart = () => setCartItems([]);
-  const getCartTotal = () => cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const getCartTotal = () => cartItems.reduce((total, item) => total + (item.price - item.discount) * item.quantity, 0);
   const openCart = () => setIsCartOpen(true);
   const closeCart = () => setIsCartOpen(false);
 
