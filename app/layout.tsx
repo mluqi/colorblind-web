@@ -29,6 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="oNHcp8iX_3dLUiboCni7Hbg8SXLWP9ukSNAekNpOJCw"
+        />
+      </head>
       <body className={delaGothicOne.variable}>
         <CartProvider>
           <CartSidebar />
