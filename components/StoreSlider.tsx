@@ -23,7 +23,7 @@ const storeLogos = [
   { src: "/assets/store/sky.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/tvs.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/vapestore.png", alt: "Store Logo 7", href: "#" },
-  { src: "/assets/store/zdan.png", alt: "Store Logo 7", href: "#" },
+  { src: "/assets/store/zdanvape.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/leaderslawi.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/maestro.png", alt: "Store Logo 7", href: "#" },
 ];
