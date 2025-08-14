@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import CoilCard from "@/components/CoilCard";
 import { useCart } from "@/context/CartContext"; 
 import { Product } from "@/context/CartContext";
+import ShopNow from "./ShopNow";
 
 const CoilProducts = () => {
   const coils = [
@@ -110,6 +111,10 @@ const CoilProducts = () => {
               />
             );
           })}
+        </div>
+
+        <div className="mt-20">
+          <ShopNow />
         </div>
 
         {/* <div className="text-center mt-12">

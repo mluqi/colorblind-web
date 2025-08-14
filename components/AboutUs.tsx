@@ -22,12 +22,14 @@ const AboutUs = () => {
   };
 
   const mainImages = [
-    { src: "/assets/about_us.jpg", label: "Since 2021" },
+    { src: "/assets/details/01.jpg", label: "Staggered Fuse Clapton" },
+    { src: "/assets/details/02.jpg", label: "Interlock Alien Parallel" },
+    { src: "/assets/about_us.jpg", label: "Alien Threecore" },
+    { src: "/assets/details/detail10.jpg", label: "Since 2021" },
     { src: "/assets/details/detail1.jpg", label: "Coil Premium" },
     { src: "/assets/details/detail4.jpg", label: "High Performance" },
     { src: "/assets/details/detail5.jpg", label: "Good Durability" },
     { src: "/assets/details/detail7.jpg", label: "Bold Flavour" },
-    { src: "/assets/details/detail10.jpg", label: "Colorblind Detail" },
     { src: "/assets/details/detail11.jpg", label: "Colorblind Detail" },
     { src: "/assets/details/detail12.jpg", label: "Colorblind Detail" },
     { src: "/assets/details/detail13.jpg", label: "Colorblind Detail" },

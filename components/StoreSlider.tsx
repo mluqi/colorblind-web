@@ -18,13 +18,14 @@ const storeLogos = [
   { src: "/assets/store/king.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/leader.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/mrvapestore.png", alt: "Store Logo 7", href: "#" },
-  { src: "/assets/store/rams_vape_store.png", alt: "Store Logo 7", href: "#" },
+  { src: "/assets/store/rams.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/rivervape.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/sky.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/tvs.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/vapestore.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/zdan.png", alt: "Store Logo 7", href: "#" },
   { src: "/assets/store/leaderslawi.png", alt: "Store Logo 7", href: "#" },
+  { src: "/assets/store/maestro.png", alt: "Store Logo 7", href: "#" },
 ];
 
 const StoreSlider = () => {
@@ -65,6 +66,7 @@ const StoreSlider = () => {
                   <Image
                     src={logo.src}
                     alt={logo.alt}
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                     fill
                     className="object-contain"
                   />

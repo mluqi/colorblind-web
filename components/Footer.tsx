@@ -16,12 +16,6 @@ const socmedicons = [
     icon: <FaTiktok />,
     href: "https://www.tiktok.com/@colorblind.wire",
   },
-  {
-    icon: (
-      <Image src="./assets/icons/tokopedia.svg" width={50} height={50} alt="" />
-    ),
-    href: "https://www.tokopedia.com/colorblindwire",
-  },
 ];
 
 const Footer = () => {
