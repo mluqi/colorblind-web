@@ -71,6 +71,22 @@ const CoilProducts = () => {
       bestFor: "Bold flavour & sweet",
       lifespan: "2 weeks",
       compatible: ["All RBA base"]
+    },
+    {
+      id: 5,
+      name: "Fused Clapton micron",
+      type: "for dual coil",
+      description: "a popping sensation when puffed and quite sweet the start for dual coil or single setup ",
+      discount: 5000,
+      price: 45000,
+      image: "/assets/coils/fuse-clapton.jpeg",
+      resistance: "0.18Ω",
+      diameter: "3.0mm | 5warp",
+      material: "Ni80 US ",
+      wattage: "60-70W",
+      bestFor: "popping sensation & sweet",
+      lifespan: "2 weeks",
+      compatible: ["All RDA , RTA , RDTA base"]
     }
   ];
 
