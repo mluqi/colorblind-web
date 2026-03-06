@@ -87,6 +87,22 @@ const CoilProducts = () => {
       bestFor: "popping sensation & sweet",
       lifespan: "2 weeks",
       compatible: ["All RDA , RTA , RDTA base"]
+    },
+    {
+      id: 6,
+      name: "Fused Clapton AIO",
+      type: "for AIO",
+      description: "a popping sensation when puffed and quite sweet the start for dual coil or single setup ",
+      discount: 5000,
+      price: 50000,
+      image: "/assets/coils/fuse-clapton-aio.jpeg",
+      resistance: "0.30Ω",
+      diameter: "2.5mm | 5warp",
+      material: "Ni80 US ",
+      wattage: "30W-40W",
+      bestFor: "popping sensation & sweet flavour",
+      lifespan: "2 weeks",
+      compatible: ["All RBA base"]
     }
   ];
 
