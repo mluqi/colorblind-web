@@ -94,7 +94,7 @@ const MobileNav = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex justify-center items-center"
       >
-        <CiMenuBurger className="text-[32px] text-accent" />
+        <CiMenuBurger className="text-[32px] text-white" />
       </button>
 
       {/* Popup */}
