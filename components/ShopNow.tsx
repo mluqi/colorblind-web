@@ -5,7 +5,7 @@ const ecommercePlatforms = [
   {
     name: "Tokopedia",
     logo: "/assets/ecommerce/tokopedia.png", 
-    url: "https://tk.tokopedia.com/ZSSwHJPvf/",
+    url: "https://tk.tokopedia.com/ZS9b8e1rQ/",
   },
   {
     name: "Toco",
